@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.text.FlxText;
@@ -17,6 +18,7 @@ class PlayState extends FlxState
 
 	override public function create()
 	{
+
 		text = new FlxText(100, 10, 300, "X: Poop Fart", 20);
 		add(text);
 		text2 = new FlxText(100, 50, 300, "Y: Poop Fart 2", 20);
@@ -31,6 +33,7 @@ class PlayState extends FlxState
 		//	for (i in 0...20)
 		//	{
 		bad = new Enemy(20, 20);
+		bad.animation.play("vibe");
 		add(bad);
 		bad.screenCenter();
 		//	}

@@ -11,7 +11,7 @@ class DeathState extends FlxState
 	{
 		var playButton:FlxButton;
 
-		var text = new FlxText(100, 10, 300, "You died lol", 20);
+		var text = new FlxText(100, 10, 300, "You died lol\nScore: " + PlayState.points, 20);
 		add(text);
 		text.screenCenter();
 		text.y -= 100;
